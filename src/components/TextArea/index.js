@@ -9,7 +9,7 @@ const TextArea = (props) => {
     return(
          <div className="text-area">
             <label>{label}</label>
-            <input placeholder={placeh}/>
+            <input value={props.value} onChange={event => props.onChanged(event.target.value)} required={props.required} placeholder={placeh}/>
          </div>
     )
 }
