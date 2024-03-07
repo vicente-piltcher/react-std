@@ -14,6 +14,10 @@ const Form = (props) => {
             image: image,
             team: team
         })
+        setName('')
+        setJob('')
+        setImage('')
+        setTeam('')
     }
 
     const teamsForSelect = props.teams.map(team => team.name)

@@ -51,7 +51,7 @@ function App() {
       <Banner />
       <Form teams={teams} signedPerson = {p => singinPerson(p)}/>
       
-      {teams.map(team => <Team key={team.name} nameTeam={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor}/>)}
+      {teams.map(team => <Team key={team.name} persons={person.filter( p => p.team === team.name)} nameTeam={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor}/>)}
 
     </div>
   )
